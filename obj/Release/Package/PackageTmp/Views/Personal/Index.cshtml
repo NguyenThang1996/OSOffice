@@ -1,0 +1,97 @@
+﻿<script src="~/Scripts/Plugin/mustache.min.js"></script>
+<script src="~/Scripts/Plugin/jquery.twbsPagination.min.js"></script>
+<script src="~/Scripts/Controllers/personalController.js"></script>
+
+<div class="customer">
+    <div>
+        <h2>
+            Danh sách nhân sự
+        </h2>
+    </div>
+    <div style="padding-top: 20px;">
+        <div class="col-md-4">
+            <div class="form-group">
+                <select style="float: left;" class="form-control" id="show">
+                    <option value="2">Hiển thị</option>
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4" style="padding-left: 0px!important;">
+            <div class="input-group stylish-input-group">
+                <input type="text" id="txtsearchpsn" class="form-control" placeholder="Tìm kiếm...">
+                <span class="input-group-addon">
+                    <button type="button" id="btn-searchpsn">
+                        <span class="glyphicon glyphicon-search" style="color: #000000!important;"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-4" style="padding-left: 0px!important;">
+            <div class="form-group">
+                <select class="form-control" id="quyen">
+                    <option value="0">Quyền truy cập</option>
+                    <option value="admin">Quản trị viên</option>
+                    <option value="staff">Nhân viên</option>
+                </select>
+            </div>
+        </div>
+        <table id="tbl_personal" class="table table-bordered table-hover table-responsive" style="height: calc(100vh - 450px)!important;">
+            <thead>
+                <tr>
+                    <th style="text-align: center; vertical-align: middle;">STT</th>
+                    <th style="text-align: center; vertical-align: middle;">Tên nhân viên</th>
+                    <th style="text-align: center; vertical-align: middle;">Username</th>
+                    <th style="text-align: center; vertical-align: middle;">Password</th>
+                    <th style="text-align: center; vertical-align: middle;">Quyền truy cập</th>
+                    <th style="text-align: center; vertical-align: middle;">
+                        <img src="~/Images/Logo/support.png" />
+                    </th>
+                    <th style="text-align: center; vertical-align: middle;">
+                        <label class="checkbox-inline"><input type="checkbox" id="check-all" value=""></label>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tblbody_personal"></tbody>
+        </table>
+        <div class="pagination" id="pagination">
+        </div>
+        <div class="crud">
+            <div class="col-md-12 col-md-push-3" style="margin-top: 8px;">
+                <button id="btn-addpsn" data-toggle="modal" data-target="#myModal4" class="btn btn-success" type="button">
+                    Thêm mới
+                </button>
+                <button id="deletepsn" class="btn btn btn-danger" type="button" style="margin-left: 10px;">
+                    Xóa
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Action("ModalPersonal", "Personal")
+
+<script id="data-ns" type="x-tmpl-mustache">
+    <tr>
+        <td style="text-align: center; vertical-align: middle;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a data-id="{{Account_ID}}" class="edit-psn" data-toggle="modal" data-target="#myModal" href="#" id="edit1" style="color: #000000!important;">
+                {{AccountName}}
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">{{Username}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{Password}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{Permission}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a href="#" class="edit-psn" data-id="{{Account_ID}}" data-toggle="modal" data-target="#myModal4" style="text-decoration: none;">
+                <img src="/Images/Image/edit.png" />
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <label class="checkbox-inline"><input name="check" class="check" type="checkbox" value="{{Account_ID}}"></label>
+        </td>
+    </tr>
+</script>

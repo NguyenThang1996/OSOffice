@@ -1,0 +1,115 @@
+﻿<script src="~/Scripts/Plugin/mustache.min.js"></script>
+<script src="~/Scripts/Plugin/jquery.twbsPagination.min.js"></script>
+
+<div id="preloader">
+    <div id="status">&nbsp;</div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="customer">
+                <div>
+                    <h2>
+                        Danh sách ghi chú / thông báo
+                    </h2>
+                </div>
+                <div style="padding-top: 20px;">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <select style="float: left;" class="form-control" id="show">
+                                <option value="999999">Hiển thị</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="40">40</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="input-group stylish-input-group">
+                            <input type="text" id="txtsearchnote" class="form-control" placeholder="Tìm kiếm...">
+                            <span class="input-group-addon" style="padding: 0px 12px!important">
+                                <button type="button" id="btn-searchnote">
+                                    <span class="glyphicon glyphicon-search" style="color: #000000!important;"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <select class="form-control" id="nhomtb1">
+                                <option value="0">Nhóm</option>
+                                <option value="1">Ghi chú</option>
+                                <option value="2">Thông báo</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <select class="form-control" id="trangthai1">
+                                <option value="0">Trạng thái</option>
+                                <option value="1">Đã hoàn thành</option>
+                                <option value="2">Chưa hoàn thành</option>
+                            </select>
+                        </div>
+                    </div>
+                    <table id="tbl_note" class="table table-bordered table-hover table-responsive" style="height: calc(100vh - 450px)!important;">
+                        <thead>
+                            <tr>
+                                <th style="text-align: center; vertical-align: middle;">STT</th>
+                                <th style="text-align: center; vertical-align: middle;">Tên ghi chú</th>
+                                <th style="text-align: center; vertical-align: middle;">Nội dung</th>
+                                <th style="text-align: center; vertical-align: middle;">Cá nhân liên quan</th>
+                                <th style="text-align: center; vertical-align: middle;">Ngày tạo</th>
+                                <th style="text-align: center; vertical-align: middle;">Trạng thái</th>
+                                <th style="text-align: center; vertical-align: middle;">
+                                    <img src="~/Images/Logo/support.png" />
+                                </th>
+                                <th style="text-align: center; vertical-align: middle;">
+                                    <label class="checkbox-inline"><input type="checkbox" id="check-all" value=""></label>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="tblbody_note"></tbody>
+                    </table>
+                    <div class="pagination" id="pagination">
+                    </div>
+                    <div class="crud">
+                        <div class="col-md-12 col-md-push-3" style="margin-top: 8px;">
+                            <button id="btn-addnote" data-toggle="modal" data-target="#myModal10" class="btn btn-success" type="button">
+                                Thêm mới
+                            </button>
+                            <button id="deletenote" class="btn btn btn-danger" type="button" style="margin-left: 10px;">
+                                Xóa
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@Html.Action("ModalNotification", "Notification")
+<script id="data-tb" type="x-tmpl-mustache">
+    <tr>
+        <td style="text-align: center; vertical-align: middle;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a data-id="{{Notes_ID}}" class="edit-note" data-toggle="modal" data-target="#myModal10" href="#" id="edit1" style="color: #000000!important;">
+                {{Notes_Title}}
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">{{Notes_Content}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{Notes_Partner}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{Notes_CreateDate}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{IsOK}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a href="#" class="edit-note" data-id="{{Notes_ID}}" data-toggle="modal" data-target="#myModal10" style="text-decoration: none;">
+                <img src="/Images/Image/edit.png" />
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <label class="checkbox-inline"><input name="check" class="check" type="checkbox" value="{{Notes_ID}}"></label>
+        </td>
+    </tr>
+</script>

@@ -1,0 +1,107 @@
+﻿<script src="~/Scripts/Controllers/provinceController.js"></script>
+<script src="~/Scripts/Plugin/mustache.min.js"></script>
+<script src="~/Scripts/Plugin/jquery.twbsPagination.min.js"></script>
+<script src="~/Scripts/Controllers/cusController.js"></script>
+<script src="~/Scripts/Controllers/cuscontactController.js"></script>
+<div class="customer">
+    <div>
+        <h2>
+            Danh sách khách hàng
+        </h2>
+    </div>
+    <div style="padding-top: 20px;">
+        <div class="col-md-3">
+            <div class="form-group">
+                <select style="float: left;" class="form-control" id="show">
+                    <option value="999999">Hiển thị</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group stylish-input-group">
+                <input type="text" id="txtsearchcus" class="form-control" placeholder="Tìm kiếm...">
+                <span class="input-group-addon">
+                    <button type="button" id="btn-searchcus">
+                        <span class="glyphicon glyphicon-search" style="color: #000000!important;"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <select class="form-control" id="nhomkh1">
+                    <option value="0">Nhóm khách hàng</option>
+                    <option value="1">Doanh nghiệp</option>
+                    <option value="2">Sở ban ngành</option>
+                    <option value="3">Huyện/thị/thành phố</option>
+                    <option value="4">Tổ chức nước ngoài</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group">
+                <select class="form-control" id="tinh1"></select>
+            </div>
+        </div>
+        <table id="tbl_cus" class="table table-bordered table-hover table-responsive" style="height: calc(100vh - 450px)!important;">
+            <thead>
+                <tr>
+                    <th style="text-align: center; vertical-align: middle;">STT</th>
+                    <th style="text-align: center; vertical-align: middle;">Tên khách hàng</th>
+                    <th style="text-align: center; vertical-align: middle;">Địa chỉ</th>
+                    <th style="text-align: center; vertical-align: middle;">Điện thoại</th>
+                    <th style="text-align: center; vertical-align: middle;">Email</th>
+                    <th style="text-align: center; vertical-align: middle;">
+                        <img src="~/Images/Logo/support.png" />
+                    </th>
+                    <th style="text-align: center; vertical-align: middle;">
+                        <label class="checkbox-inline"><input type="checkbox" id="check-all" value=""></label>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tblbody_cus"></tbody>
+        </table>
+        <div class="pagination" id="pagination">
+        </div>
+        <div class="crud">
+            <div class="col-md-12 col-md-push-3" style="margin-top: 8px;">
+                <button id="btn-addcus" data-toggle="modal" data-target="#myModal" class="btn btn-success" type="button">
+                    Thêm mới
+                </button>
+                <button id="deletecus" class="btn btn btn-danger" type="button" style="margin-left: 10px;">
+                    Xóa
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Action("ModalCustomer", "Customer")
+@Html.Action("ModalProvince", "Province")
+<script id="data-tinh1" type="x-tmpl-mustache">
+    <option value="{{Province_ID}}">{{ProvinceName}}</option>
+</script>
+<script id="data-kh" type="x-tmpl-mustache">
+    <tr>
+        <td style="text-align: center; vertical-align: middle;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a data-id="{{Customer_ID}}" class="edit-cus" data-toggle="modal" data-target="#myModal" href="#" id="edit1" style="color: #000000!important;">
+                {{CusName}}
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">{{Address}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{Tel}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{Email}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a href="#" class="edit-cus" data-id="{{Customer_ID}}" data-toggle="modal" data-target="#myModal" style="text-decoration: none;">
+                <img src="/Images/Image/edit.png" />
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <label class="checkbox-inline"><input name="check" class="check" type="checkbox" value="{{Customer_ID}}"></label>
+        </td>
+    </tr>
+</script>

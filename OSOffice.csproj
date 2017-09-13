@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{263AE1CE-4246-4D25-9B85-7F5E7BA4938B}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OSOffice</RootNamespace>
+    <AssemblyName>OSOffice</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-datetimepicker.css" />
+    <Content Include="Content\bootstrap-imageupload.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jquery.appendGrid-1.6.3.css" />
+    <Content Include="Content\jquery.dataTables.min.css" />
+    <Content Include="Content\loginstyle.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\simplePagination.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="Content\uploadfile.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\Image\1.png" />
+    <Content Include="Images\Image\2.png" />
+    <Content Include="Images\Image\3.png" />
+    <Content Include="Images\Image\4.png" />
+    <Content Include="Images\Image\6.png" />
+    <Content Include="Images\Image\ajax-loader.gif" />
+    <Content Include="Images\Image\Awicons-Vista-Artistic-Delete.ico" />
+    <Content Include="Images\Image\Back chi tiet.jpg" />
+    <Content Include="Images\Image\back.png" />
+    <Content Include="Images\Image\backlogin3.jpg" />
+    <Content Include="Images\Image\banner.png" />
+    <Content Include="Images\Image\dang nhap he thong.png" />
+    <Content Include="Images\Image\den1.png" />
+    <Content Include="Images\Image\di1.png" />
+    <Content Include="Images\Image\edit.png" />
+    <Content Include="Images\Image\ghe.jpg" />
+    <Content Include="Images\Image\hopdong.png" />
+    <Content Include="Images\Image\hoso.png" />
+    <Content Include="Images\Image\hs1.png" />
+    <Content Include="Images\Image\icon HOME.png" />
+    <Content Include="Images\Image\icon LOGOUT.png" />
+    <Content Include="Images\Image\icon USER.png" />
+    <Content Include="Images\Image\khachhang.png" />
+    <Content Include="Images\Image\landmark.jpg" />
+    <Content Include="Images\Image\loadding.gif" />
+    <Content Include="Images\Image\loading_apple.gif" />
+    <Content Include="Images\Image\Loading_icon.gif" />
+    <Content Include="Images\Image\lottecentercomvn.jpg" />
+    <Content Include="Images\Image\man-with-stop-sign-04.png" />
+    <Content Include="Images\Image\NEW.jpg" />
+    <Content Include="Images\Image\screenshot.png" />
+    <Content Include="Images\Image\SHAPE.png" />
+    <Content Include="Images\Image\taive.png" />
+    <Content Include="Images\Image\dep.jpg" />
+    <Content Include="Images\Image\vbd.png" />
+    <Content Include="Images\Image\vbdd.png" />
+    <Content Include="Images\Logo\chanr.jpg" />
+    <Content Include="Images\Logo\muaa.jpg" />
+    <Content Include="Images\Logo\mua-dem.jpg" />
+    <Content Include="Images\Logo\ngu.jpg" />
+    <Content Include="Images\Logo\movl.jpg" />
+    <Content Include="Images\Logo\cau.jpg" />
+    <Content Include="Images\Logo\25 %281%29.jpg" />
+    <Content Include="Images\Logo\co.jpg" />
+    <Content Include="Images\Logo\phongcanh.jpg" />
+    <Content Include="Images\Logo\lol.png" />
+    <Content Include="Images\Logo\rain.jpg" />
+    <Content Include="Images\Logo\support.png" />
+    <Content Include="Images\Image\vanban.png" />
+    <Content Include="Images\Logo\logo office.png" />
+    <Content Include="Images\Logo\lol.jpg" />
+    <Content Include="Images\Logo\unnamed.jpg" />
+    <Content Include="Scripts\Controllers\attachdoccomeController.js" />
+    <Content Include="Scripts\Controllers\attachdocgoController.js" />
+    <Content Include="Scripts\Controllers\contracstyleController.js" />
+    <Content Include="Scripts\Controllers\contractController.js" />
+    <Content Include="Scripts\Controllers\doccomeController.js" />
+    <Content Include="Scripts\Controllers\docgoController.js" />
+    <Content Include="Scripts\Controllers\doctypeController.js" />
+    <Content Include="Scripts\Controllers\fileController.js" />
+    <Content Include="Scripts\Controllers\filedoccomeController.js" />
+    <Content Include="Scripts\Controllers\filedocgoController.js" />
+    <Content Include="Scripts\Controllers\noteController.js" />
+    <Content Include="Scripts\Controllers\permissionController.js" />
+    <Content Include="Scripts\Controllers\personalController.js" />
+    <Content Include="Scripts\Controllers\productController.js" />
+    <Content Include="Scripts\Controllers\providerController.js" />
+    <Content Include="Scripts\Controllers\provinceController.js" />
+    <Content Include="Scripts\Plugin\bootbox.min.js" />
+    <Content Include="Scripts\Plugin\bootstrap-datetimepicker.min.js" />
+    <Content Include="Scripts\Plugin\bootstrap-filestyle.js" />
+    <Content Include="Scripts\Plugin\bootstrap-imageupload.min.js" />
+    <Content Include="Scripts\Plugin\bootstrap.js" />
+    <Content Include="Scripts\Plugin\bootstrap.min.js" />
+    <Content Include="fonts\UTM AvoBold_1.ttf" />
+    <Content Include="fonts\UTM AvoBold_Italic_1.ttf" />
+    <Content Include="fonts\UTM AvoItalic_1.ttf" />
+    <Content Include="fonts\UTM Avo_1.ttf" />
+    <Content Include="fonts\UTM BanqueB_1.ttf" />
+    <Content Include="fonts\UTM BanqueR_1.ttf" />
+    <None Include="Properties\PublishProfiles\OSOffice.pubxml" />
+    <None Include="Scripts\Plugin\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Controllers\cusController.js" />
+    <Content Include="Scripts\Plugin\datepicker.js" />
+    <Content Include="Scripts\Plugin\jquery-1.10.2.js" />
+    <Content Include="Scripts\Plugin\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\Plugin\jquery-ui.css" />
+    <Content Include="Scripts\Plugin\jquery.ajaxfileupload.js" />
+    <Content Include="Scripts\Plugin\jquery.appendGrid-1.6.3.js" />
+    <Content Include="Scripts\Plugin\jquery.dataTables.min.js" />
+    <Content Include="Scripts\Plugin\jquery.priceformat.min.js" />
+    <Content Include="Scripts\Plugin\jquery.simplePagination.js" />
+    <Content Include="Scripts\Plugin\jquery.uploadfile.min.js" />
+    <Content Include="Scripts\Plugin\modernizr-2.6.2.js" />
+    <Content Include="Scripts\Plugin\jquery.twbsPagination.min.js" />
+    <Content Include="Scripts\Plugin\Moment.js" />
+    <Content Include="Scripts\Plugin\mustache.min.js" />
+    <Content Include="Scripts\Plugin\session.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Customer\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AttachDocComeController.cs" />
+    <Compile Include="Controllers\AttachDocGoController.cs" />
+    <Compile Include="Controllers\ContracStyleController.cs" />
+    <Compile Include="Controllers\ContractController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\DocComeController.cs" />
+    <Compile Include="Controllers\DocFolderController.cs" />
+    <Compile Include="Controllers\DocGoController.cs" />
+    <Compile Include="Controllers\DocTypeController.cs" />
+    <Compile Include="Controllers\DocumentController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\FileDocComeController.cs" />
+    <Compile Include="Controllers\FileDocGoController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\myActionController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
+    <Compile Include="Controllers\PermissionController.cs" />
+    <Compile Include="Controllers\PersonalController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\ProviderController.cs" />
+    <Compile Include="Controllers\ProvinceController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\OSOfficeEntities.cs" />
+    <Compile Include="Models\OS_Exe_DocIn.cs" />
+    <Compile Include="Models\OS_Exe_DocInAttach.cs" />
+    <Compile Include="Models\OS_Exe_DocOut.cs" />
+    <Compile Include="Models\OS_Exe_DocOutAttach.cs" />
+    <Compile Include="Models\OS_Exe_Folder.cs" />
+    <Compile Include="Models\OS_Exe_FolderAttach.cs" />
+    <Compile Include="Models\OS_Exe_Notes.cs" />
+    <Compile Include="Models\OS_Sys_DocType.cs" />
+    <Compile Include="Models\OS_Sys_NotesFile.cs" />
+    <Compile Include="Models\OS_Sys_Provider.cs" />
+    <Compile Include="Models\SO_Exe_ContPayment.cs" />
+    <Compile Include="Models\SO_Exe_Contract.cs" />
+    <Compile Include="Models\SO_Exe_ContractFile.cs" />
+    <Compile Include="Models\SO_Exe_ContractLog.cs" />
+    <Compile Include="Models\SO_Exe_CusContact.cs" />
+    <Compile Include="Models\SO_Exe_Customer.cs" />
+    <Compile Include="Models\SO_Exe_Permission.cs" />
+    <Compile Include="Models\SO_Sys_ContracStyle.cs" />
+    <Compile Include="Models\SO_Sys_Product.cs" />
+    <Compile Include="Models\SO_Sys_Province.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Scripts\Plugin\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\Modal\modalcustomer.cshtml" />
+    <Content Include="Views\Shared\Modal\modalprovince.cshtml" />
+    <Content Include="Views\Contract\Index.cshtml" />
+    <Content Include="Views\Shared\Modal\modalcontract.cshtml" />
+    <Content Include="Views\Shared\Modal\modalcontracstyle.cshtml" />
+    <Content Include="Scripts\Plugin\jquery.maskedinput.js" />
+    <Content Include="Views\Permission\Index.cshtml" />
+    <Content Include="Views\Shared\Modal\modalpersonal.cshtml" />
+    <Content Include="Views\Personal\Index.cshtml" />
+    <Content Include="Views\Personal\NoEntry.cshtml" />
+    <Content Include="Views\Shared\Modal\modalproduct.cshtml" />
+    <Content Include="Views\Shared\Modal\modaldocgo.cshtml" />
+    <Content Include="Views\Shared\Modal\modaldoccome.cshtml" />
+    <Content Include="Views\DocCome\Index.cshtml" />
+    <Content Include="Views\DocGo\Index.cshtml" />
+    <Content Include="Views\Document\Index.cshtml" />
+    <Content Include="Views\Shared\Modal\modalprovider.cshtml" />
+    <Content Include="Views\Shared\Modal\modaldoctype.cshtml" />
+    <Content Include="Views\Personal\Downloads.cshtml" />
+    <Content Include="Views\Shared\Modal\modalnotification.cshtml" />
+    <Content Include="Views\Notification\Index.cshtml" />
+    <Content Include="Views\myAction\Upload.cshtml" />
+    <Content Include="Views\myAction\Downloads.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\uploads\" />
+    <Folder Include="Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64534</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64534/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

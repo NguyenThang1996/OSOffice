@@ -1,0 +1,132 @@
+﻿<script src="~/Scripts/Plugin/mustache.min.js"></script>
+<script src="~/Scripts/Plugin/jquery.twbsPagination.min.js"></script>
+<script src="~/Scripts/Controllers/contractController.js"></script>
+<script src="~/Scripts/Controllers/contracstyleController.js"></script>
+<script src="~/Scripts/Controllers/cusController.js"></script>
+<script src="~/Scripts/Controllers/fileController.js"></script>
+<script src="~/Scripts/Controllers/productController.js"></script>
+<div class="customer">
+    <div>
+        <h2>
+            Danh sách hợp đồng
+        </h2>
+    </div>
+    <div style="padding-top: 20px;">
+        <div class="col-md-2">
+            <div class="form-group">
+                <select style="float: left;" class="form-control" id="show">
+                    <option value="999999">Hiển thị</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="40">40</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding-left: 0px!important;">
+            <div class="input-group stylish-input-group">
+                <input type="text" id="txtsearchctr" class="form-control" placeholder="Tìm kiếm...">
+                <span class="input-group-addon">
+                    <button type="button" id="btn-searchctr">
+                        <span class="glyphicon glyphicon-search" style="color: #000000!important;"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding-left: 0px!important;">
+            <div class="form-group">
+                <select class="form-control" id="sanpham1">     
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding-left: 0px!important;">
+            <div class="form-group">
+                <select class="form-control" id="phanloai">
+                    <option value="0">Phân loại</option>
+                    <option value="1">Hợp đồng thu</option>
+                    <option value="2">Hợp đồng chi</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding-left: 0px!important;">
+            <div class="form-group">
+                <select class="form-control" id="nhomhd1">                    
+                </select>
+            </div>
+        </div>
+        <div class="col-md-2" style="padding-left: 0px!important;">
+            <div class="form-group">
+                <select class="form-control" id="ttqt1">
+                    <option value="0">TT quyết toán</option>
+                    <option value="1">Chưa thanh toán</option>
+                    <option value="2">Đã tạm ứng</option>
+                    <option value="3">Đã thanh toán xong</option>
+                </select>
+            </div>
+        </div>
+        <table id="tbl_contract" class="table table-bordered table-hover table-responsive" style="height: calc(100vh - 450px)!important;">
+            <thead>
+                <tr>
+                    <th style="text-align: center; vertical-align: middle;">STT</th>
+                    <th style="text-align: center; vertical-align: middle;">Số hợp đồng</th>
+                    <th style="text-align: center; vertical-align: middle;">Ngày ký</th>
+                    <th style="text-align: center; vertical-align: middle;">Khách hàng</th>
+                    <th style="text-align: center; vertical-align: middle;">Phân loại</th>
+                    <th style="text-align: center; vertical-align: middle;">Nhóm</th>
+                    <th style="text-align: center; vertical-align: middle;">Trạng thái quyết toán</th>
+                    <th style="text-align: center; vertical-align: middle;">
+                        <img src="~/Images/Logo/support.png" />
+                    </th>
+                    <th style="text-align: center; vertical-align: middle;">
+                        <label class="checkbox-inline"><input type="checkbox" id="check-all" value=""></label>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="tblbody_contract"></tbody>
+        </table>
+        <div class="pagination" id="pagination">
+        </div>
+        <div class="crud">
+            <div class="col-md-12 col-md-push-3" style="margin-top: 8px;">
+                <button id="btn-addctr" data-toggle="modal" data-target="#myModal2" class="btn btn-success" type="button">
+                    Thêm mới
+                </button>
+                <button id="deletectr" class="btn btn btn-danger" type="button" style="margin-left: 10px;">
+                    Xóa
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Action("ModalContract", "Contract")
+@Html.Action("ModalContracStyle", "ContracStyle")
+@Html.Action("ModalProduct", "Product")
+<script id="data-nhomhd1" type="x-tmpl-mustache">
+    <option value="{{ContracStyle_ID}}">{{ContracStyleName}}</option>
+</script>
+<script id="data-sp1" type="x-tmpl-mustache">
+    <option value="{{Product_ID}}">{{ProductName}}</option>
+</script>
+<script id="data-hd" type="x-tmpl-mustache">
+    <tr>
+        <td style="text-align: center; vertical-align: middle;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a data-id="{{Contract_ID}}" class="edit-ctr" data-toggle="modal" data-target="#myModal" href="#" id="edit1" style="color: #000000!important;">
+                {{NoCode}}
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">{{SignDate}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{CusName}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{IsFlag}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{ContracStyleName}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{IsPayment}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a href="#" class="edit-ctr" data-id="{{Contract_ID}}" data-toggle="modal" data-target="#myModal" style="text-decoration: none;">
+                <img src="/Images/Image/edit.png" />
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">
+            <label class="checkbox-inline"><input name="check" class="check" type="checkbox" value="{{Contract_ID}}"></label>
+        </td>
+    </tr>
+</script>

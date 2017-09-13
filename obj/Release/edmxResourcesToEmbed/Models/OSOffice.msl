@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="OSOfficeModelStoreContainer" CdmEntityContainer="OSOfficeEntities">
+    <EntitySetMapping Name="SO_Exe_ContPayment">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Exe_ContPayment">
+        <MappingFragment StoreEntitySet="SO_Exe_ContPayment">
+          <ScalarProperty Name="Payment_ID" ColumnName="Payment_ID" />
+          <ScalarProperty Name="Contract_ID" ColumnName="Contract_ID" />
+          <ScalarProperty Name="Payment_Time" ColumnName="Payment_Time" />
+          <ScalarProperty Name="Payment_Values" ColumnName="Payment_Values" />
+          <ScalarProperty Name="Payment_Date" ColumnName="Payment_Date" />
+          <ScalarProperty Name="IsOrders" ColumnName="IsOrders" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Exe_Contract">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Exe_Contract">
+        <MappingFragment StoreEntitySet="SO_Exe_Contract">
+          <ScalarProperty Name="Contract_ID" ColumnName="Contract_ID" />
+          <ScalarProperty Name="NoCode" ColumnName="NoCode" />
+          <ScalarProperty Name="SignDate" ColumnName="SignDate" />
+          <ScalarProperty Name="Subjects" ColumnName="Subjects" />
+          <ScalarProperty Name="IsFlag" ColumnName="IsFlag" />
+          <ScalarProperty Name="ContracStyle_ID" ColumnName="ContracStyle_ID" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="Contents" ColumnName="Contents" />
+          <ScalarProperty Name="IsValue" ColumnName="IsValue" />
+          <ScalarProperty Name="MoneyText" ColumnName="MoneyText" />
+          <ScalarProperty Name="IsInCome" ColumnName="IsInCome" />
+          <ScalarProperty Name="IsVAT" ColumnName="IsVAT" />
+          <ScalarProperty Name="IsPayType" ColumnName="IsPayType" />
+          <ScalarProperty Name="OutOfDate" ColumnName="OutOfDate" />
+          <ScalarProperty Name="SignNameA" ColumnName="SignNameA" />
+          <ScalarProperty Name="SignNameB" ColumnName="SignNameB" />
+          <ScalarProperty Name="IsStatus" ColumnName="IsStatus" />
+          <ScalarProperty Name="IsInvoice" ColumnName="IsInvoice" />
+          <ScalarProperty Name="IsPayment" ColumnName="IsPayment" />
+          <ScalarProperty Name="IsLock" ColumnName="IsLock" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Users_ID" ColumnName="Users_ID" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Exe_ContractFile">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Exe_ContractFile">
+        <MappingFragment StoreEntitySet="SO_Exe_ContractFile">
+          <ScalarProperty Name="ContractFile_ID" ColumnName="ContractFile_ID" />
+          <ScalarProperty Name="Contract_ID" ColumnName="Contract_ID" />
+          <ScalarProperty Name="IsFlag" ColumnName="IsFlag" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="FileSource" ColumnName="FileSource" />
+          <ScalarProperty Name="FileSize" ColumnName="FileSize" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Exe_ContractLog">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Exe_ContractLog">
+        <MappingFragment StoreEntitySet="SO_Exe_ContractLog">
+          <ScalarProperty Name="Log_ID" ColumnName="Log_ID" />
+          <ScalarProperty Name="CrreatedDate" ColumnName="CrreatedDate" />
+          <ScalarProperty Name="Users_ID" ColumnName="Users_ID" />
+          <ScalarProperty Name="ContractFile_ID" ColumnName="ContractFile_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Exe_CusContact">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Exe_CusContact">
+        <MappingFragment StoreEntitySet="SO_Exe_CusContact">
+          <ScalarProperty Name="CusContact_ID" ColumnName="CusContact_ID" />
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="IsSex" ColumnName="IsSex" />
+          <ScalarProperty Name="TitleName" ColumnName="TitleName" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="ContactTel" ColumnName="ContactTel" />
+          <ScalarProperty Name="ContactEmail" ColumnName="ContactEmail" />
+          <ScalarProperty Name="ContactNote" ColumnName="ContactNote" />
+          <ScalarProperty Name="Skype" ColumnName="Skype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Exe_Customer">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Exe_Customer">
+        <MappingFragment StoreEntitySet="SO_Exe_Customer">
+          <ScalarProperty Name="Customer_ID" ColumnName="Customer_ID" />
+          <ScalarProperty Name="IsFlag" ColumnName="IsFlag" />
+          <ScalarProperty Name="CusGroup_ID" ColumnName="CusGroup_ID" />
+          <ScalarProperty Name="CusName" ColumnName="CusName" />
+          <ScalarProperty Name="EngName" ColumnName="EngName" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="IsLogo" ColumnName="IsLogo" />
+          <ScalarProperty Name="TaxCode" ColumnName="TaxCode" />
+          <ScalarProperty Name="AccountID" ColumnName="AccountID" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="Parent_ID" ColumnName="Parent_ID" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="Users_ID" ColumnName="Users_ID" />
+          <ScalarProperty Name="Province_ID" ColumnName="Province_ID" />
+          <ScalarProperty Name="Service" ColumnName="Service" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Exe_Permission">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Exe_Permission">
+        <MappingFragment StoreEntitySet="SO_Exe_Permission">
+          <ScalarProperty Name="Account_ID" ColumnName="Account_ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Permission" ColumnName="Permission" />
+          <ScalarProperty Name="AccountName" ColumnName="AccountName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Sys_ContracStyle">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Sys_ContracStyle">
+        <MappingFragment StoreEntitySet="SO_Sys_ContracStyle">
+          <ScalarProperty Name="ContracStyle_ID" ColumnName="ContracStyle_ID" />
+          <ScalarProperty Name="ContracStyleName" ColumnName="ContracStyleName" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="IsActived" ColumnName="IsActived" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Sys_Product">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Sys_Product">
+        <MappingFragment StoreEntitySet="SO_Sys_Product">
+          <ScalarProperty Name="Product_ID" ColumnName="Product_ID" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="IsActived" ColumnName="IsActived" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SO_Sys_Province">
+      <EntityTypeMapping TypeName="OSOfficeModel.SO_Sys_Province">
+        <MappingFragment StoreEntitySet="SO_Sys_Province">
+          <ScalarProperty Name="Province_ID" ColumnName="Province_ID" />
+          <ScalarProperty Name="ProvinceName" ColumnName="ProvinceName" />
+          <ScalarProperty Name="Des" ColumnName="Des" />
+          <ScalarProperty Name="IsActived" ColumnName="IsActived" />
+          <ScalarProperty Name="IsOrder" ColumnName="IsOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="OSOfficeModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

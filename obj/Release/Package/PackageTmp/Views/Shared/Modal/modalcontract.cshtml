@@ -1,0 +1,402 @@
+﻿<div id="myModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width: 80%!important">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal2-title">Thêm mới thông tin khách hàng</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-md-12 modalcus">
+                            <input type="text" class="form-control hidden" disabled required id="idhd">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="stt">Ngày tạo</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" name="date" required id="ngaytao">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="stt">Khách hàng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="kh"></select>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Số hợp đồng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="sohd">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Ngày ký</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" name="date" class="form-control" required id="ngayky">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Thuộc nhóm</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="nhomhd"></select>
+                        </div>
+                        <div class="modalcus" style="padding-left: 15px;">
+                            <button data-toggle="modal" data-target="#myModal3" class="btn btn-info" id="btn-addctrstl">Thêm nhóm</button>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Loại hợp đồng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="loaihd">
+                                <option value="1" class="active">Hợp đồng kinh tế</option>
+                                <option value="2">Hợp đồng dịch vụ</option>
+                                <option value="3">Thỏa thuận liên doanh + hợp đồng</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Phân loại</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <label class="radio-inline"><input type="radio" name="isflag" value="1" checked>Hợp đồng thu</label>
+                            <label class="radio-inline"><input type="radio" name="isflag" value="2">Hợp đồng chi</label>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Nội dung chính</label>
+                        </div>
+                        <div class="col-md-10 modalcus">
+                            <textarea class="form-control" rows="5" id="noidung"></textarea>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Giá trị hợp đồng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="gthd">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label>Bằng chữ</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="bangchu">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Doanh thu</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="doanhthu">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Thuế VAT</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="thuevat">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Sản phẩm</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="sanpham">                               
+                            </select>
+                        </div>
+                        <div class="modalcus" style="padding-left: 15px;">
+                            <button data-toggle="modal" data-target="#myModal5" class="btn btn-info" id="btn-addprd">Thêm sản phẩm</button>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Hình thức thanh toán</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="hinhthuctt">
+                                <option value="1" class="active">Tiền mặt</option>
+                                <option value="2">Séc</option>
+                                <option value="3">Chuyển khoản</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Người ký bên A</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="kybenA">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Người ký bên B</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="kybenB">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Trạng thái thực hiện</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="trangthaith">
+                                <option value="1" class="active">Chưa thực hiện</option>
+                                <option value="2">Đang thực hiện</option>
+                                <option value="3">Đã thực hiện</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Xuất hóa đơn</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="xuathd">
+                                <option value="1" class="active">Đã xuất</option>
+                                <option value="2">Chưa xuất</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Trạng thái quyết toán</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="trangthaiqt">
+                                <option value="1" class="active">Chưa thanh toán</option>
+                                <option value="2">Đã tạm ứng</option>
+                                <option value="3">Đã thanh toán xong</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Thời hạn hợp đồng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" name="date" class="form-control" id="thoihanhd">
+                        </div>
+                        <div class="clearfix">
+
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Tình trạng hợp đồng</label>
+                        </div>
+                        <div class="col-md-10 modalcus">
+                            <textarea class="form-control" rows="5" id="tinhtranghd"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="exTab1" class="container">
+                            <ul class="nav nav-pills">
+                                <li class="active">
+                                    <a href="#1a" data-toggle="tab">DANH SÁCH TỆP ĐÍNH KÈM</a>
+                                </li>
+                                <li>
+                                    <a href="#2a" data-toggle="tab">TIẾN ĐỘ THANH TOÁN CỦA HỢP ĐỒNG</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content clearfix">
+                                <div class="tab-pane active" id="1a">
+                                    <div class="col-md-4" style="padding-top: 20px">
+                                        <input type="file" id="fUpload" multiple data-placeholder="Chưa có tệp nào được chọn" />
+                                    </div>
+                                    <div style="padding-top: 90px">
+                                        <table id="" class="table table-bordered table-hover table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">STT</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Tên tệp</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Kích cỡ</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Phân loại</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Xóa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tblbody_file"></tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-danger" id="btn-savefile">Cập nhật tệp</button>
+                                </div>
+                                <div class="tab-pane" id="2a">
+                                    <div class="col-md-4" style="padding-top: 20px;">
+                                        <button type="button" style="float: left!important" id="btn-morectr" class="btn btn-warning">
+                                            Thêm thông tin
+                                        </button>
+                                    </div>
+                                    <div style="padding-top: 90px">
+                                        <table id="tbl_access" class="table table-bordered table-hover table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">STT</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Lần</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Giá trị</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Ngày thanh toán</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Xóa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr id='addr0'>
+                                                    <td style="text-align: center; vertical-align: middle; color: #000000;">
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        <input style="text-align: center; vertical-align: middle; color: #000000;" type="text" class="form-control lan" />
+                                                    </td>
+                                                    <td>
+                                                        <input style="text-align: center; vertical-align: middle; color: #000000;" type="text" class="form-control giatri" />
+                                                    </td>
+                                                    <td>
+                                                        <input name="date" style="text-align: center; vertical-align: middle; color: #000000;" type="text" class="form-control ngaythanhtoan" />
+                                                    </td>
+                                                    <td style="text-align: center; vertical-align: middle; color: #000000;">
+                                                        <button type="button" class='btn btn-danger glyphicon glyphicon-remove row-remove'></button>
+                                                    </td>
+                                                </tr>
+                                                <tr id="addr1"></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="btn-savectr">Lưu</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="data-nhomhd" type="x-tmpl-mustache">
+    <option value="{{ContracStyle_ID}}">{{ContracStyleName}}</option>
+</script>
+<script id="data-tenkh" type="x-tmpl-mustache">
+    <option value="{{Customer_ID}}">{{CusName}}</option>
+</script>
+<script id="data-tinh" type="x-tmpl-mustache">
+    <option value="{{Province_ID}}">{{ProvinceName}}</option>
+</script>
+<script id="data-sp" type="x-tmpl-mustache">
+    <option value="{{Product_ID}}">{{ProductName}}</option>
+</script>
+<script id="data-file" type="x-tmpl-mustache">
+    <tr class="">
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{FileName}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{FileSize}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">
+            <select class="form-control" id="phanloai">
+                <option value="1" class="active">Hợp đồng</option>
+                <option value="2">Bán thanh lý</option>
+            </select>
+        </td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">
+            <a href="#">
+                <img src="/Images/Image/taive.png" />
+            </a>
+            <a href="#">
+                <img style="height: 16px" src="/Images/Image/Awicons-Vista-Artistic-Delete.ico" />
+            </a>
+        </td>
+    </tr>
+</script>
+<script>
+    $(":file").filestyle({ placeholder: "Chưa chọn tệp" });
+
+    $('.giatri').priceFormat({
+        prefix: '',
+        centsSeparator: '.',
+        thousandsSeparator: '.',
+        centsLimit: '',
+        suffix: ''
+    });
+
+    var i = 1;
+    $("#btn-morectr").click(function () {
+        $('#addr' + i).html("<td style='text-align: center; vertical-align: middle; color: #000000;'>" + (i + 1) + "</td><td><input type='text' style='text-align: center; vertical-align: middle; color: #000000;' class='form-control lan' /> </td><td><input type='text' style='text-align: center; vertical-align: middle; color: #000000;' class='form-control giatri' /></td>        <td><input name='date' type='text' style='text-align: center; vertical-align: middle; color: #000000;' class='form-control ngaythanhtoan' /></td><td style='text-align: center; vertical-align: middle; color: #000000;'><button type='button' class='btn btn-danger glyphicon glyphicon-remove row-remove'></button></td>");
+
+        $('#tbl_access').append('<tr id="addr' + (i + 1) + '"></tr>');
+        i++;
+    });
+
+    var date_input = $('input[name="date"]'); //our date input has the name "date"
+    var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+    var options = {
+        format: 'dd/mm/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+    };
+    date_input.datepicker(options);
+
+    $('#gthd').priceFormat({
+        prefix: '',
+        centsSeparator: '.',
+        thousandsSeparator: '.',
+        centsLimit: ''
+        ,
+        suffix: ''
+    });
+
+    $('#doanhthu').priceFormat({
+        prefix: '',
+        centsSeparator: '.',
+        thousandsSeparator: '.',
+        centsLimit: '',
+        suffix: ''
+    });
+    $('#thuevat').priceFormat({
+        prefix: '',
+        centsSeparator: '.',
+        thousandsSeparator: '.',
+        centsLimit: '',
+        suffix: ''
+    });
+
+
+   
+    var DOCSO = function () {
+        var t = ["không", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín"],
+            r = function (r, n) {
+                var o = "",
+                    a = Math.floor(r / 10),
+                    e = r % 10;
+                return a > 1 ? (o = " " + t[a] + " mươi", 1 == e && (o += " mốt")) : 1 == a ? (o = " mười", 1 == e && (o += " một")) : n && e > 0 && (o = " lẻ"), 5 == e && a >= 1 ? o += " lăm" : 4 == e && a >= 1 ? o += " tư" : (e > 1 || 1 == e && 0 == a) && (o += " " + t[e]), o
+            },
+            n = function (n, o) {
+                var a = "",
+                    e = Math.floor(n / 100),
+                    n = n % 100;
+                return o || e > 0 ? (a = " " + t[e] + " trăm", a += r(n, !0)) : a = r(n, !1), a
+            },
+            o = function (t, r) {
+                var o = "",
+                    a = Math.floor(t / 1e6),
+                    t = t % 1e6;
+                a > 0 && (o = n(a, r) + " triệu", r = !0);
+                var e = Math.floor(t / 1e3),
+                    t = t % 1e3;
+                return e > 0 && (o += n(e, r) + " nghìn", r = !0), t > 0 && (o += n(t, r)), o
+            };
+        return {
+            doc: function (r) {
+                if (0 == r) return t[0];
+                var n = "",
+                    a = "";
+                do ty = r % 1e9, r = Math.floor(r / 1e9), n = r > 0 ? o(ty, !0) + a + n : o(ty, !1) + a + n, a = " tỷ"; while (r > 0);
+                return n.trim()
+            }
+        }
+    }();
+
+    function jsUcfirst(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+
+    $('#gthd').change(function()
+    {
+        var gthd = $("#gthd").val();
+        var str = gthd.replace(/\./g, "")
+        var str1 = jsUcfirst(DOCSO.doc(str));
+        var str2 = " đồng";
+        var str3 = str1 + str2;
+        $('#bangchu').val(str3);
+    })
+
+    var d = new Date();
+
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+
+    var output = (day < 10 ? '0' : '') + day + '/' + (month < 10 ? '0' : '') + month + '/' + d.getFullYear();
+    $("#ngaytao").val(output);
+        
+</script>

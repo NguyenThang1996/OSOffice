@@ -1,0 +1,279 @@
+﻿<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width: 80%!important">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thêm mới thông tin khách hàng</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-md-12 modalcus">
+                            <input type="text" class="form-control hidden" disabled required id="idkh">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Ngày tạo</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" name="date" class="form-control" id="ngaytao">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Mã số thuế</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="mst">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Tên khách hàng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" required id="ten">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Điện thoại</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="tel" class="form-control" id="dt">
+                        </div>
+                        <div class="col-md-2 modalcus"> 
+                            <label for="ten">Tên tiếng anh</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="tenta">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Fax</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="fax">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Tên viết tắt</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="tenvt">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label>Email</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Nhóm khách hàng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="nhomkh">
+                                <option value="1" class="active">Doanh nghiệp</option>
+                                <option value="2">Sở ban ngành</option>
+                                <option value="3">Huyện/thị/thành phố</option>
+                                <option value="4">Tổ chức nước ngoài</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Website</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="web">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Phân loại</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <label class="radio-inline"><input type="radio" name="group_cus" value="1" checked>Khách hàng</label>
+                            <label class="radio-inline"><input type="radio" name="group_cus" value="2">Đối tác</label>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Tên ngân hàng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="tennh">
+                        </div>                        
+                        <div class="clearfix">
+                        </div>             
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Địa chỉ</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="diachi">
+                        </div>           
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Tài khoản bank</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="tknh">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Số hợp đồng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="sohd">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Dịch vụ sử dụng</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <input type="text" class="form-control" id="dichvu">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Tỉnh</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="tinh"></select>
+                        </div>                        
+                        <div class="modalcus" style="padding-left: 15px;">
+                            <button data-toggle="modal" data-target="#myModal1" class="btn btn-info" id="btn-addpro">Thêm tỉnh</button>
+                        </div>  
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Ghi chú</label>
+                        </div>
+                        <div class="col-md-10 modalcus">
+                            <textarea class="form-control" rows="5" id="ghichu"></textarea>
+                        </div>
+                    </div>   
+                    <div class="row">                   
+                        <div class="col-md-6">
+                            <h5 style="font-weight: bold">
+                                THÔNG TIN LIÊN HỆ HỖ TRỢ
+                            </h5>
+                        </div>
+                        <div class="col-md-6">
+                            <button type="button" style="float: right!important" id="btn-morecus" class="btn btn-warning">
+                                Thêm thông tin
+                            </button>
+                        </div>
+                        <div class="clearfix">
+
+                        </div>
+                        <table style="margin-top: 15px" class="table table-bordered table-hover table-responsive" id="tbl_customer">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">
+                                        STT
+                                    </th>
+                                    <th class="text-center">
+                                        Họ tên
+                                    </th>
+                                    <th class="text-center">
+                                        Điện thoại
+                                    </th>
+                                    <th class="text-center">
+                                        Email
+                                    </th>
+                                    <th class="text-center">
+                                        Ghi chú
+                                    </th>
+                                    <th class="text-center">
+                                        Xóa
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id='addrr0'>
+                                    <td style="text-align: center; vertical-align: middle; color: #000000;">
+                                        1
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control tenht" style="text-align: center; vertical-align: middle; color: #000000;">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control dtht" style="text-align: center; vertical-align: middle; color: #000000;">
+                                    </td>
+                                    <td>
+                                        <input type="text" class="form-control emailht" style="text-align: center; vertical-align: middle; color: #000000;">
+                                    </td>
+                                    <td>
+                                        <textarea style="text-align: center; vertical-align: middle; color: #000000;" class="form-control ghichuht" rows="1"></textarea>
+                                    </td>
+                                    <td style="text-align: center; vertical-align: middle; color: #000000;">
+                                        <button type="button" class='btn btn-danger glyphicon glyphicon-remove row-remove'></button>
+                                    </td>
+                                </tr>
+                                <tr id="addrr1">
+
+                                </tr>
+                            </tbody>
+                            @*<tbody id="tblbody_cuscontact">
+
+                            </tbody>*@
+                        </table>
+                    </div>                    
+                </form>
+            </div>
+            <div class="clearfix">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="btn-savekh">Lưu</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script id="data-tinh" type="x-tmpl-mustache">
+    <option value="{{Province_ID}}">{{ProvinceName}}</option>
+</script>
+<script>      
+    var i = 1;
+    $("#btn-morecus").click(function () {        
+        $('#addrr' + i).html("<td style='text-align: center; vertical-align: middle; color: #000000;'>" + (i + 1) + "</td><td><input type='text' style='text-align: center; vertical-align: middle; color: #000000;' class='form-control tenht'  /> </td><td><input type='text' style='text-align: center; vertical-align: middle; color: #000000;' class='form-control dtht' /></td><td><input type='text' style='text-align: center; vertical-align: middle; color: #000000;' class='form-control emailht' /></td><td><input type='text' style='text-align: center; vertical-align: middle; color: #000000;' class='form-control ghichuht' /></td><td style='text-align: center; vertical-align: middle; color: #000000;'><button type='button' class='btn btn-danger glyphicon glyphicon-remove row-remove'></button></td>");
+
+        $('#tbl_customer').append('<tr id="addrr' + (i + 1) + '"></tr>');
+        i++;
+    });
+    //$("#btn-morecus").click(function () {
+    //    var myTableDiv = document.getElementById("tbl_customer");
+    //    var tableBody = document.createElement('tbody');
+    //    myTableDiv.appendChild(tableBody);
+
+    //    for (var i = 1; i < 2; i++) {
+    //        var tr = document.createElement('tr');
+    //        tableBody.appendChild(tr);
+
+    //        for (var j = 1; j < 7; j++) {
+    //            var td = document.createElement('td');
+    //            td.appendChild(document.createElement('input'));
+    //            tr.appendChild(td);
+    //        }
+    //    }
+    //    myTableDiv.appendChild(table);
+    //});
+   
+    
+    var date_input = $('input[name="date"]'); //our date input has the name "date"
+    var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+    var options = {
+        format: 'dd/mm/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+    };
+    date_input.datepicker(options);
+
+    var d = new Date();
+
+    var month = d.getMonth() + 1;
+    var day = d.getDate();
+
+    var output = (day < 10 ? '0' : '') + day + '/' + (month < 10 ? '0' : '') + month + '/' + d.getFullYear();
+    $("#ngaytao").val(output);
+
+</script>
+
+<script id="data-khht" type="x-tmpl-mustache">
+    <tr>
+        <td style="text-align: center; vertical-align: middle;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a data-id="{{Customer_ID}}" class="edit-cus" data-toggle="modal" data-target="#myModal" href="#" id="edit1" style="color: #000000!important;">
+                {{ContactName}}
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">{{ContactTel}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{ContactEmail}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{ContactNote}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">
+            <button type="button" class='btn btn-danger glyphicon glyphicon-remove row-remove'></button>
+        </td>
+    </tr>
+</script>

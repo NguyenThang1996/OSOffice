@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSOffice</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Images/Logo/logo office.png" rel="shortcut icon">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/Plugin/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/Plugin/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Plugin/bootstrap.min.js"></script>
+    <script src="~/Scripts/Plugin/Moment.js"></script>
+    <script src="~/Scripts/Plugin/bootstrap-datetimepicker.min.js"></script>
+    <link href="~/Content/bootstrap-datetimepicker.css" rel="stylesheet" />
+    <script src="~/Scripts/Plugin/bootstrap-filestyle.js"></script>
+    <script src="~/Scripts/Plugin/mustache.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+    <script src="~/Scripts/Plugin/jquery.maskedinput.js"></script>
+    <script src="~/Scripts/Plugin/jquery.priceformat.min.js"></script>
+    <script src="~/Scripts/Controllers/permissionController.js"></script>
+    <script src="~/Scripts/Controllers/personalController.js"></script>
+    <script src="~/Scripts/Controllers/noteController.js"></script>
+    <script src="~/Scripts/Plugin/jquery.simplePagination.js"></script>
+    <link href="~/Content/simplePagination.css" rel="stylesheet" />
+    <script src="~/Scripts/Plugin/bootbox.min.js"></script>
+</head>
+
+<body>
+    <div class="header-top">
+        <div style="display: table-cell; vertical-align: middle;">
+            <div class="col-md-2">
+                <a href="/Home/Index">
+                    <img style="width: 175px;" class="img-responsive" src="~/Images/Logo/logo%20office.png" />
+                </a>
+            </div>
+            <div class="col-md-7">
+                <p style="color: #f69534; font-family: UTM BanqueR_1; font-size: 27px; letter-spacing: 3px; text-align: center">
+                    HỆ THỐNG QUẢN LÝ VĂN PHÒNG NỘI BỘ
+                </p>
+            </div>
+            <div class="col-md-3">
+                <ul style="list-style: none; float: right;">
+                    <li>
+                        <a href="/Home/Index">
+                            <img class="img-responsive" src="~/Images/Image/icon%20HOME.png" />
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img id="noti" class="img-responsive" src="~/Images/Image/6.png" />
+                        </a>
+                        <ul class="dropdown-menu" id="tbcht" style="left: auto!important; right: 0!important; width: 250px;">                            
+                        </ul>
+                        <div id="sotbcht">
+
+                        </div>
+                    </li>
+                    @*<li>
+                        <a href="/Notification/Index">
+                            <img class="img-responsive" src="~/Images/Image/6.png" />
+                        </a>
+                    </li>*@
+                    <li>
+                        <a href="/Permission/CheckLogout">
+                            <img class="img-responsive" src="~/Images/Image/icon%20LOGOUT.png" />
+                        </a>
+                    </li>
+                    <li>
+                        <a data-id="@Session["User_ID"]" class="edit-psn" data-toggle="modal" data-target="#myModal4" href="#">
+                            <img class="img-responsive" src="~/Images/Image/icon%20USER.png" />
+                        </a>
+                    </li>
+                    <li style="padding-top: 7px; margin-left: 10px;">
+                        <a data-id="@Session["User_ID"]" class="edit-psn" data-toggle="modal" data-target="#myModal4" href="#" style="color: white; text-decoration: none">
+                            @Session["Username"]
+                        </a>
+                    </li>
+                </ul>*
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+</body>
+</html>
+@Html.Action("ModalPersonal", "Personal")
+@Html.Action("ModalNotification", "Notification")
+
+<script id="data-tbcht" type="x-tmpl-mustache">
+    <li><a class='edit-note' data-id='{{Notes_ID}}' data-toggle='modal' data-target='#myModal10' href="#" style="white-space: normal!important">{{Notes_Title}} ({{Notes_CreateDate}})</a></li>
+    <li class="divider"></li>
+</script>
+
+<script>
+    jQuery(window).load(function () {
+        // will first fade out the loading animation
+        jQuery("#status").fadeOut();
+        // will fade out the whole DIV that covers the website.
+        jQuery("#preloader").delay(1000).fadeOut("slow");
+    })
+    $("#noti").click(function () {
+        if ($("#tbcht").is(":hidden")) {
+            $("#tbcht").slideDown("normal");
+        } else {
+            $("#tbcht").slideUp("normal");
+        }
+    });
+</script>

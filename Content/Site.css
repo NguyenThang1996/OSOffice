@@ -1,0 +1,264 @@
+﻿@font-face {
+    font-family: "UTM BanqueR_1";
+    src: url('../fonts/UTM BanqueR_1.ttf');
+}
+@font-face {
+    font-family: "UTM Avo_1";
+    src: url('../fonts/UTM Avo_1.ttf');
+}
+body {
+    /*padding-top: 30px;*/
+    padding-bottom: 20px;
+    background: url('../Images/Image/Back chi tiet.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial;
+    font-size: 14px !important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+
+.header {
+    height: 100px;
+    line-height: 100px;
+}
+
+.logo {
+    width: 160px;
+}
+
+.title div a, span {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+}
+
+.title div {
+    float: right;
+}
+
+.index {
+    padding-top: 90px;
+}
+
+    .index div a img:hover {
+        border: 2px solid #ccc;
+    }
+
+.customer {
+    background: #fff;
+    min-height: 500px;
+    padding: 10px 20px 20px 20px;
+    margin-top: 50px;
+}
+
+.name p {
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #333;
+    color: #fff;
+}
+
+.name {
+    padding-top: 20px;
+}
+
+.stylish-input-group .input-group-addon {
+    background: white !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
+}
+
+.crud {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #4e4a4a;
+    height: 50px !important;
+}
+
+.pagination {
+    float: right !important;
+}
+
+.active a {
+    z-index: 0 !important;
+}
+
+
+
+.vertical-offset-100 {
+    padding-top: 100px;
+}
+
+.table-sortable tbody tr {
+    cursor: move;
+}
+
+.modalcus {
+    padding-bottom: 10px;
+}
+
+#exTab1 .tab-content {
+    color: white;
+    padding: 5px 15px;
+}
+
+#exTab2 h3 {
+    color: white;
+    padding: 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+    border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0;
+}
+
+#exTab3 .tab-content {
+    color: white;
+    padding: 5px 15px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #000000 !important;
+}
+
+.form-control {
+    height: 31px !important;
+}
+
+.header-top .col-md-3 > ul > li {
+    float: left;
+    /*background-color: #333333;*/
+}
+
+.header-top {
+    background: url('/Images/Image/SHAPE.png');
+    height: 118px;
+    display: table;
+    width: 100%;
+}
+.content div
+{
+    text-align: center;
+}
+.content div a
+{
+    display: block;
+}
+.content div a img {
+    margin: auto;
+    padding-top: 8px;
+    height: 190px;
+}
+.content div a:hover img
+{
+    transform: scale(1.2);
+    transition: all 500ms ease
+}
+.content div span
+{
+    color: white;
+    font-family: UTM Avo_1;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.content
+{
+    opacity: 0.85;
+}
+/*.header-top .row{
+    -moz-box-align:center;
+    -moz-box-pack:center;
+    height: 90px!important;
+    display:-webkit-box;
+    -webkit-box-align:center;
+    -webkit-box-pack:center;
+    
+    display: box;
+    box-align: center;
+    box-pack: center;
+}
+.header-top .row .col-md-1{
+    height: 90px;
+    width:100%;
+    background-color: gray;
+    border-radius: 10px 10px 10px 10px;
+}*/
+#preloader  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fefefe;
+    z-index: 99;
+    height: 100%;
+    display: flex;
+ }
+
+#status {
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
+    right: 50%;
+    background-repeat: no-repeat;
+    background-image: url('../../Images/Image/Loading_icon.gif');
+    background-position: center;
+    margin: auto;
+}
+.header-top div .col-md-3 ul li a img
+{
+    height: 36px;
+    width: 36px;
+}
+
+.notification-counter {   
+    position: absolute;
+    top: -7px;
+    left: 20px;
+    
+    background-color: rgba(212, 19, 13, 1);
+    color: #fff;
+    border-radius: 3px;
+    padding: 2px 4px;
+    font: 10px Verdana;
+}

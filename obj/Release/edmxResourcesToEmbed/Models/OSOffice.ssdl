@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OSOfficeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="SO_Exe_ContPayment">
+    <Key>
+      <PropertyRef Name="Payment_ID" />
+    </Key>
+    <Property Name="Payment_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Contract_ID" Type="int" Nullable="false" />
+    <Property Name="Payment_Time" Type="int" />
+    <Property Name="Payment_Values" Type="varchar" MaxLength="50" />
+    <Property Name="Payment_Date" Type="varchar" MaxLength="50" />
+    <Property Name="IsOrders" Type="int" />
+  </EntityType>
+  <EntityType Name="SO_Exe_Contract">
+    <Key>
+      <PropertyRef Name="Contract_ID" />
+    </Key>
+    <Property Name="Contract_ID" Type="int" Nullable="false" />
+    <Property Name="NoCode" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SignDate" Type="varchar" MaxLength="50" />
+    <Property Name="Subjects" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsFlag" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContracStyle_ID" Type="int" />
+    <Property Name="Customer_ID" Type="int" />
+    <Property Name="Product_ID" Type="int" />
+    <Property Name="Contents" Type="ntext" />
+    <Property Name="IsValue" Type="nvarchar" MaxLength="50" />
+    <Property Name="MoneyText" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsInCome" Type="varchar" MaxLength="50" />
+    <Property Name="IsVAT" Type="varchar" MaxLength="50" />
+    <Property Name="IsPayType" Type="int" />
+    <Property Name="OutOfDate" Type="smalldatetime" />
+    <Property Name="SignNameA" Type="nvarchar" MaxLength="50" />
+    <Property Name="SignNameB" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsStatus" Type="varchar" MaxLength="50" />
+    <Property Name="IsInvoice" Type="int" />
+    <Property Name="IsPayment" Type="varchar" MaxLength="50" />
+    <Property Name="IsLock" Type="bit" />
+    <Property Name="CreateDate" Type="varchar" MaxLength="50" />
+    <Property Name="Users_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Des" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="SO_Exe_ContractFile">
+    <Key>
+      <PropertyRef Name="ContractFile_ID" />
+    </Key>
+    <Property Name="ContractFile_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Contract_ID" Type="int" />
+    <Property Name="IsFlag" Type="int" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="250" />
+    <Property Name="FileSource" Type="image" />
+    <Property Name="FileSize" Type="float" />
+    <Property Name="IsOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="SO_Exe_ContractLog">
+    <Key>
+      <PropertyRef Name="Log_ID" />
+    </Key>
+    <Property Name="Log_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CrreatedDate" Type="datetime" Nullable="false" />
+    <Property Name="Users_ID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContractFile_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SO_Exe_CusContact">
+    <Key>
+      <PropertyRef Name="CusContact_ID" />
+    </Key>
+    <Property Name="CusContact_ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Customer_ID" Type="int" Nullable="false" />
+    <Property Name="ContactName" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsSex" Type="bit" />
+    <Property Name="TitleName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mobile" Type="varchar" MaxLength="50" />
+    <Property Name="ContactTel" Type="varchar" MaxLength="50" />
+    <Property Name="ContactEmail" Type="varchar" MaxLength="50" />
+    <Property Name="ContactNote" Type="varchar" MaxLength="250" />
+    <Property Name="Skype" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SO_Exe_Customer">
+    <Key>
+      <PropertyRef Name="Customer_ID" />
+    </Key>
+    <Property Name="Customer_ID" Type="int" Nullable="false" />
+    <Property Name="IsFlag" Type="int" />
+    <Property Name="CusGroup_ID" Type="varchar" MaxLength="50" />
+    <Property Name="CusName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="EngName" Type="nvarchar" MaxLength="250" />
+    <Property Name="ShortName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Address" Type="nvarchar" MaxLength="250" />
+    <Property Name="Tel" Type="varchar" MaxLength="50" />
+    <Property Name="Fax" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Website" Type="varchar" MaxLength="50" />
+    <Property Name="IsLogo" Type="image" />
+    <Property Name="TaxCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="AccountID" Type="nvarchar" MaxLength="50" />
+    <Property Name="BankName" Type="nvarchar" MaxLength="250" />
+    <Property Name="Note" Type="ntext" />
+    <Property Name="Parent_ID" Type="varchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="varchar" MaxLength="50" />
+    <Property Name="Users_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Province_ID" Type="varchar" MaxLength="50" />
+    <Property Name="Service" Type="ntext" />
+    <Property Name="ContactNo" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="SO_Exe_Permission">
+    <Key>
+      <PropertyRef Name="Account_ID" />
+    </Key>
+    <Property Name="Account_ID" Type="int" Nullable="false" />
+    <Property Name="Username" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Permission" Type="nvarchar" MaxLength="50" />
+    <Property Name="AccountName" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="SO_Sys_ContracStyle">
+    <Key>
+      <PropertyRef Name="ContracStyle_ID" />
+    </Key>
+    <Property Name="ContracStyle_ID" Type="int" Nullable="false" />
+    <Property Name="ContracStyleName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Des" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActived" Type="bit" Nullable="false" />
+    <Property Name="IsOrder" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SO_Sys_Product">
+    <Key>
+      <PropertyRef Name="Product_ID" />
+    </Key>
+    <Property Name="Product_ID" Type="int" Nullable="false" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Des" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActived" Type="bit" />
+    <Property Name="IsOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="SO_Sys_Province">
+    <Key>
+      <PropertyRef Name="Province_ID" />
+    </Key>
+    <Property Name="Province_ID" Type="int" Nullable="false" />
+    <Property Name="ProvinceName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Des" Type="nvarchar" MaxLength="250" />
+    <Property Name="IsActived" Type="bit" />
+    <Property Name="IsOrder" Type="int" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_SO_Exe_Contract_SO_Exe_Customer">
+    <End Role="SO_Exe_Customer" Type="Self.SO_Exe_Customer" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SO_Exe_Contract" Type="Self.SO_Exe_Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SO_Exe_Customer">
+        <PropertyRef Name="Customer_ID" />
+      </Principal>
+      <Dependent Role="SO_Exe_Contract">
+        <PropertyRef Name="Customer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SO_Exe_Contract_SO_Sys_ContracStyle">
+    <End Role="SO_Sys_ContracStyle" Type="Self.SO_Sys_ContracStyle" Multiplicity="0..1" />
+    <End Role="SO_Exe_Contract" Type="Self.SO_Exe_Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SO_Sys_ContracStyle">
+        <PropertyRef Name="ContracStyle_ID" />
+      </Principal>
+      <Dependent Role="SO_Exe_Contract">
+        <PropertyRef Name="ContracStyle_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SO_Exe_Contract_SO_Sys_Province">
+    <End Role="SO_Sys_Province" Type="Self.SO_Sys_Province" Multiplicity="0..1" />
+    <End Role="SO_Exe_Contract" Type="Self.SO_Exe_Contract" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SO_Sys_Province">
+        <PropertyRef Name="Province_ID" />
+      </Principal>
+      <Dependent Role="SO_Exe_Contract">
+        <PropertyRef Name="Product_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SO_Exe_ContractFile_SO_Exe_Contract">
+    <End Role="SO_Exe_Contract" Type="Self.SO_Exe_Contract" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SO_Exe_ContractFile" Type="Self.SO_Exe_ContractFile" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SO_Exe_Contract">
+        <PropertyRef Name="Contract_ID" />
+      </Principal>
+      <Dependent Role="SO_Exe_ContractFile">
+        <PropertyRef Name="Contract_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SO_Exe_ContractLog_SO_Exe_ContractFile">
+    <End Role="SO_Exe_ContractFile" Type="Self.SO_Exe_ContractFile" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SO_Exe_ContractLog" Type="Self.SO_Exe_ContractLog" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SO_Exe_ContractFile">
+        <PropertyRef Name="ContractFile_ID" />
+      </Principal>
+      <Dependent Role="SO_Exe_ContractLog">
+        <PropertyRef Name="ContractFile_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SO_Exe_CusContact_SO_Exe_Customer">
+    <End Role="SO_Exe_Customer" Type="Self.SO_Exe_Customer" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="SO_Exe_CusContact" Type="Self.SO_Exe_CusContact" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SO_Exe_Customer">
+        <PropertyRef Name="Customer_ID" />
+      </Principal>
+      <Dependent Role="SO_Exe_CusContact">
+        <PropertyRef Name="Customer_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OSOfficeModelStoreContainer">
+    <EntitySet Name="SO_Exe_ContPayment" EntityType="Self.SO_Exe_ContPayment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Exe_Contract" EntityType="Self.SO_Exe_Contract" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Exe_ContractFile" EntityType="Self.SO_Exe_ContractFile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Exe_ContractLog" EntityType="Self.SO_Exe_ContractLog" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Exe_CusContact" EntityType="Self.SO_Exe_CusContact" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Exe_Customer" EntityType="Self.SO_Exe_Customer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Exe_Permission" EntityType="Self.SO_Exe_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Sys_ContracStyle" EntityType="Self.SO_Sys_ContracStyle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Sys_Product" EntityType="Self.SO_Sys_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SO_Sys_Province" EntityType="Self.SO_Sys_Province" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_SO_Exe_Contract_SO_Exe_Customer" Association="Self.FK_SO_Exe_Contract_SO_Exe_Customer">
+      <End Role="SO_Exe_Customer" EntitySet="SO_Exe_Customer" />
+      <End Role="SO_Exe_Contract" EntitySet="SO_Exe_Contract" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SO_Exe_Contract_SO_Sys_ContracStyle" Association="Self.FK_SO_Exe_Contract_SO_Sys_ContracStyle">
+      <End Role="SO_Sys_ContracStyle" EntitySet="SO_Sys_ContracStyle" />
+      <End Role="SO_Exe_Contract" EntitySet="SO_Exe_Contract" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SO_Exe_Contract_SO_Sys_Province" Association="Self.FK_SO_Exe_Contract_SO_Sys_Province">
+      <End Role="SO_Sys_Province" EntitySet="SO_Sys_Province" />
+      <End Role="SO_Exe_Contract" EntitySet="SO_Exe_Contract" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SO_Exe_ContractFile_SO_Exe_Contract" Association="Self.FK_SO_Exe_ContractFile_SO_Exe_Contract">
+      <End Role="SO_Exe_Contract" EntitySet="SO_Exe_Contract" />
+      <End Role="SO_Exe_ContractFile" EntitySet="SO_Exe_ContractFile" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SO_Exe_ContractLog_SO_Exe_ContractFile" Association="Self.FK_SO_Exe_ContractLog_SO_Exe_ContractFile">
+      <End Role="SO_Exe_ContractFile" EntitySet="SO_Exe_ContractFile" />
+      <End Role="SO_Exe_ContractLog" EntitySet="SO_Exe_ContractLog" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SO_Exe_CusContact_SO_Exe_Customer" Association="Self.FK_SO_Exe_CusContact_SO_Exe_Customer">
+      <End Role="SO_Exe_Customer" EntitySet="SO_Exe_Customer" />
+      <End Role="SO_Exe_CusContact" EntitySet="SO_Exe_CusContact" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,156 @@
+﻿@font-face {
+}
+
+body {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background: url('../Images/Image/lottecentercomvn.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Arial;
+    font-size: 14px!important;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+
+.header {
+    height: 100px;
+    line-height: 100px;
+}
+
+.logo a img {
+    width: 220px;
+    float: left;
+}
+
+.title div a, span {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+}
+
+.title div {
+    float: right;
+}
+
+.index {
+    padding-top: 90px;
+}
+
+    .index div a img:hover {
+        border: 2px solid #ccc;
+    }
+
+.customer {
+    background: #fff;
+    min-height: 500px;
+    padding: 10px 20px 20px 20px;
+    margin-top: -60px;
+}
+
+.name p {
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #333;
+    color: #fff;
+}
+
+.name {
+    padding-top: 20px;
+}
+
+.stylish-input-group .input-group-addon {
+    background: white !important;
+}
+
+.stylish-input-group .form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #ccc;
+}
+
+.stylish-input-group button {
+    border: 0;
+    background: transparent;
+}
+
+.crud {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #4e4a4a;
+    height: 50px !important;
+}
+
+.pagination {
+    float: right !important;
+}
+
+.active a {
+    z-index: 0 !important;
+}
+
+
+
+.vertical-offset-100 {
+    padding-top: 100px;
+}
+
+.table-sortable tbody tr {
+    cursor: move;
+}
+
+.modalcus {
+    padding-bottom: 20px;
+}
+
+#exTab1 .tab-content {
+    color: white;
+    padding: 5px 15px;
+}
+
+#exTab2 h3 {
+    color: white;
+    padding: 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+    border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0;
+}
+
+#exTab3 .tab-content {
+    color: white;
+    padding: 5px 15px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #000000 !important;
+}

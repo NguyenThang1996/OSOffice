@@ -1,0 +1,194 @@
+﻿<div id="myModal10" class="modal fade" role="dialog">
+    <div class="modal-dialog" style="width: 60%!important">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal10-title">Thêm mới thông tin văn bản đi</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="row">
+                        <div class="col-md-12 modalcus">
+                            <input type="text" class="form-control hidden" disabled required id="idvbdd">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Ngày tạo</label>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <input type="text" name="date" class="form-control" id="ngaytaovbdd">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Ngày đến</label>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <input type="tel" name="date" class="form-control" id="ngaynhanvbdd">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Số / Ký hiệu</label>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <input type="text" class="form-control" required id="sovbdd">
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Trích yếu</label>
+                        </div>
+                        <div class="col-md-10 modalcus">
+                            <textarea class="form-control" style="height: auto!important" rows="5" id="trichyeuvbdd"></textarea>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Loại văn bản</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="lvb"></select>
+                        </div>
+                        <div class="modalcus" style="padding-left: 15px;">
+                            <button data-toggle="modal" data-target="#myModal8" class="btn btn-info" id="btn-adddoctype">Thêm loại văn bản</button>
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Cơ quan ban hành</label>
+                        </div>
+                        <div class="col-md-4 modalcus">
+                            <select class="form-control" id="cq"></select>
+                        </div>
+                        <div class="modalcus" style="padding-left: 15px;">
+                            <button data-toggle="modal" data-target="#myModal9" class="btn btn-info" id="btn-addprovider">Thêm cơ quan</button>
+                        </div>
+                        <div class="clearfix">
+
+                        </div>
+                        <div class="col-md-2 modalcus">
+                            <label for="ten">Ghi chú</label>
+                        </div>
+                        <div class="col-md-10 modalcus">
+                            <textarea class="form-control" style="height: auto!important" rows="2" id="ghichuvbdd"></textarea>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 20px;">
+                        <div id="exTab1" class="container">
+                            <ul class="nav nav-pills">
+                                @*<li class="active">
+                                    <a href="#1a" data-toggle="tab">VĂN BẢN ĐÍNH KÈM</a>
+                                </li>*@
+                                <li class="active">
+                                    <a href="#2a" data-toggle="tab">TÀI LIỆU KÈM THEO</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content clearfix">
+                                @*<div class="tab-pane active" id="1a">
+                                        <div class="col-md-4" style="padding-top: 20px">
+                                            <input type="file" id="fUpload3" data-placeholder="Chưa có tệp nào được chọn" />
+                                        </div>
+                                        <div style="padding-top: 90px">
+                                            <table id="" class="table table-bordered table-hover table-responsive">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="text-align: center; vertical-align: middle; color: #000000;">STT</th>
+                                                        <th style="text-align: center; vertical-align: middle; color: #000000;">Tên tệp</th>
+                                                        <th style="text-align: center; vertical-align: middle; color: #000000;">Kích cỡ</th>
+                                                        <th style="text-align: center; vertical-align: middle; color: #000000;">Xóa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tblbody_vbdk"></tbody>
+                                            </table>
+                                        </div>
+                                        <button type="button" class="btn btn-danger" id="btn-savevbdk">Cập nhật văn bản</button>
+                                    </div>*@
+                                <div class="tab-pane active" id="2a">
+                                    <div class="col-md-5" style="padding-top: 20px">
+                                        <input type="file" id="fUpload4" multiple data-placeholder="Chưa có tệp nào được chọn" />
+                                    </div>
+                                    <div style="padding-top: 90px">
+                                        <table id="" class="table table-bordered table-hover table-responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">STT</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Tên tệp</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Kích cỡ</th>
+                                                    <th style="text-align: center; vertical-align: middle; color: #000000;">Xóa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="tblbody_tlkt"></tbody>
+                                        </table>
+                                    </div>
+                                    <button type="button" class="btn btn-danger" id="btn-savetlkt">Cập nhật tài liệu</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="clearfix">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" id="btn-savevbdd">Lưu</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Đóng</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script id="data-lvb" type="x-tmpl-mustache">
+    <option value="{{DocType_ID}}">{{DocType_Name}}</option>
+</script>
+<script id="data-cq" type="x-tmpl-mustache">
+    <option value="{{Provider_ID}}">{{Provider_Name}}</option>
+</script>
+<script>
+    $(":file").filestyle({ placeholder: "Chưa chọn tệp" });
+</script>
+<script id="data-vbdk" type="x-tmpl-mustache">
+    <tr class="">
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{FilesName}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{FileSize}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">
+            <a href="#">
+                <img src="/Images/Image/taive.png" />
+            </a>
+            <a href="#">
+                <img style="height: 16px" src="/Images/Image/Awicons-Vista-Artistic-Delete.ico" />
+            </a>
+        </td>
+    </tr>
+</script>
+<script id="data-tlkt" type="x-tmpl-mustache">
+    <tr class="">
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{FileName}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">{{FileSize}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">
+            <a href="#">
+                <img src="/Images/Image/taive.png" />
+            </a>
+            <a href="#">
+                <img style="height: 16px" src="/Images/Image/Awicons-Vista-Artistic-Delete.ico" />
+            </a>
+        </td>
+    </tr>
+</script>
+<script id="data-khht" type="x-tmpl-mustache">
+    <tr>
+        <td style="text-align: center; vertical-align: middle;">{{NumberialOrder}}</td>
+        <td style="text-align: center; vertical-align: middle;">
+            <a data-id="{{Customer_ID}}" class="edit-cus" data-toggle="modal" data-target="#myModal" href="#" id="edit1" style="color: #000000!important;">
+                {{ContactName}}
+            </a>
+        </td>
+        <td style="text-align: center; vertical-align: middle;">{{ContactTel}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{ContactEmail}}</td>
+        <td style="text-align: center; vertical-align: middle;">{{ContactNote}}</td>
+        <td style="text-align: center; vertical-align: middle; color: #000000;">
+            <button type="button" class='btn btn-danger glyphicon glyphicon-remove row-remove'></button>
+        </td>
+    </tr>
+</script>
+<script>
+    var date_input = $('input[name="date"]'); //our date input has the name "date"
+    var container = $('.bootstrap-iso form').length > 0 ? $('.bootstrap-iso form').parent() : "body";
+    var options = {
+        format: 'dd/mm/yyyy',
+        container: container,
+        todayHighlight: true,
+        autoclose: true,
+    };
+    date_input.datepicker(options);
+</script>

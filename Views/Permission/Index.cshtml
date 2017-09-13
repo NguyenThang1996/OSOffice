@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="~/Images/Logo/logo office.png" rel="shortcut icon">
+    <title>Đăng nhập</title>
+    <script src="~/Scripts/Plugin/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Plugin/bootstrap.min.js"></script>
+    <script src="~/Scripts/Controllers/permissionController.js"></script>
+    <link href="~/Content/loginstyle.css" rel="stylesheet" />
+    <script src="~/Scripts/Plugin/session.js"></script>
+</head>
+<body>
+
+    <div class="container" style="padding-top: 30px;">
+        <div class="col-md-12">
+            <div class="col-md-6" style="position: absolute; top: 220px">
+                <span style="font-size: 60px; color: red; text-shadow: 8px 8px 8px #400000; ">
+                    ORIENT
+                </span>
+                <span style="font-size: 60px; text-shadow: 8px 8px 8px #5f4545; ">
+                    SOFT
+                </span>
+                <p style="font-size: 25px; padding-left: 155px; text-shadow: 2px 2px 2px #5f4545; ">
+                    think smart. do smart
+                </p>
+            </div>
+            <div class="col-md-6" style="position: relative; top: 100px;">
+                <section id="content" style="float: right">
+                    <form action="@Url.Action("Index", "Permission")" method="post">
+                        <h1 style="color: #6f5b5b">Đăng nhập</h1>
+                        <div>
+                            <input type="text" placeholder="Tài khoản" name="Username" required="" id="username" />
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Mật khẩu" name="Password" required="" id="password" />
+                        </div>
+                        <div class="form-group">
+                            <span style="color: red;">
+                                @ViewBag.errorlogin
+                            </span>
+
+                        </div>
+                        <div>
+                            <input type="submit" id="btn-login" value="Đăng nhập" />
+                            <a href="#">Quên mật khẩu?</a>
+                            <a style="color: #292929" href="#">Đăng ký</a>
+                        </div>
+                    </form><!-- form -->
+                    <div class="button">
+                        <a href="#">Bản quyền thuộc về OrientSoft VietNam</a>
+                    </div><!-- button -->
+                </section><!-- content -->
+            </div>
+        </div>
+
+    </div><!-- container -->
+</body>
+</html>
+

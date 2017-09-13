@@ -1,0 +1,183 @@
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\csc.exe
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\vbc.exe
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\OSOffice.dll.config
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\OSOffice.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\OSOffice.pdb
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\EntityFramework.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\EntityFramework.SqlServer.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\PagedList.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\PagedList.Mvc.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Helpers.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Mvc.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Razor.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Webpages.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Webpages.Razor.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\EntityFramework.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\EntityFramework.SqlServer.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\PagedList.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\PagedList.Mvc.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Razor.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Webpages.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Webpages.Razor.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Helpers.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\bin\System.Web.Mvc.xml
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\obj\Debug\OSOffice.dll
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\obj\Debug\OSOffice.pdb
+C:\Users\Nguyen Huy Thang\documents\visual studio 2015\Projects\OSOffice\OSOffice\obj\Debug\OSOffice.csprojResolveAssemblyReference.cache
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\csc.exe
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\vbc.exe
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\OSOffice.dll.config
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\OSOffice.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\OSOffice.pdb
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\EntityFramework.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\EntityFramework.SqlServer.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\PagedList.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\PagedList.Mvc.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Helpers.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Mvc.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Razor.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Webpages.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Webpages.Razor.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\EntityFramework.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\EntityFramework.SqlServer.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\PagedList.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\PagedList.Mvc.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Razor.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Webpages.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Webpages.Razor.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Helpers.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\bin\System.Web.Mvc.xml
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\obj\Debug\OSOffice.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\obj\Debug\OSOffice.pdb
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\OSOffice\obj\Debug\OSOffice.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\csc.exe
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\vbc.exe
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\VBCSCompiler.exe
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\OSOffice.dll.config
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\OSOffice.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\OSOffice.pdb
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\EntityFramework.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\EntityFramework.SqlServer.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\PagedList.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\PagedList.Mvc.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Helpers.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Mvc.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Razor.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.Razor.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\EntityFramework.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\EntityFramework.SqlServer.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\PagedList.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\PagedList.Mvc.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Razor.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.Razor.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Helpers.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\bin\System.Web.Mvc.xml
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\obj\Debug\OSOffice.csprojResolveAssemblyReference.cache
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\obj\Debug\OSOffice.dll
+C:\Users\Dell\Documents\Visual Studio 2015\Projects\OSOffice-master\OSOffice\obj\Debug\OSOffice.pdb
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\csc.exe
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\vbc.exe
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\VBCSCompiler.exe
+D:\Projects\OSOffice-master\OSOffice\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\OSOffice-master\OSOffice\bin\OSOffice.dll.config
+D:\Projects\OSOffice-master\OSOffice\bin\OSOffice.dll
+D:\Projects\OSOffice-master\OSOffice\bin\OSOffice.pdb
+D:\Projects\OSOffice-master\OSOffice\bin\EntityFramework.dll
+D:\Projects\OSOffice-master\OSOffice\bin\EntityFramework.SqlServer.dll
+D:\Projects\OSOffice-master\OSOffice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\OSOffice-master\OSOffice\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\OSOffice-master\OSOffice\bin\PagedList.dll
+D:\Projects\OSOffice-master\OSOffice\bin\PagedList.Mvc.dll
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Helpers.dll
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Mvc.dll
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Razor.dll
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.Deployment.dll
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.dll
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.Razor.dll
+D:\Projects\OSOffice-master\OSOffice\bin\EntityFramework.xml
+D:\Projects\OSOffice-master\OSOffice\bin\EntityFramework.SqlServer.xml
+D:\Projects\OSOffice-master\OSOffice\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\OSOffice-master\OSOffice\bin\PagedList.xml
+D:\Projects\OSOffice-master\OSOffice\bin\PagedList.Mvc.xml
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Razor.xml
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.xml
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.Deployment.xml
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Webpages.Razor.xml
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Helpers.xml
+D:\Projects\OSOffice-master\OSOffice\bin\System.Web.Mvc.xml
+D:\Projects\OSOffice-master\OSOffice\obj\Debug\OSOffice.dll
+D:\Projects\OSOffice-master\OSOffice\obj\Debug\OSOffice.pdb
+D:\Projects\OSOffice-master\OSOffice\obj\Debug\OSOffice.csprojResolveAssemblyReference.cache
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\bin\OSOffice.dll.config
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\bin\OSOffice.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\bin\OSOffice.pdb
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\obj\Debug\OSOffice.dll
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\obj\Debug\OSOffice.pdb
+C:\Users\Tran Tien Dung\Downloads\Compressed\OSOffice-master\OSOffice-master\obj\Debug\OSOffice.csprojResolveAssemblyReference.cache
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\OSOffice.dll.config
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\OSOffice.dll
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\OSOffice.pdb
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\System.Web.Razor.xml
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\System.Web.Webpages.xml
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\System.Web.Webpages.Deployment.xml
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\System.Web.Webpages.Razor.xml
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\System.Web.Helpers.xml
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\bin\System.Web.Mvc.xml
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\obj\Debug\OSOffice.csprojResolveAssemblyReference.cache
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\obj\Debug\OSOffice.csproj.CoreCompileInputs.cache
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\obj\Debug\OSOffice.dll
+C:\Users\nguye\OneDrive\Documents\Visual Studio 2017\My Projects\OSOffice-master\OSOffice-master\obj\Debug\OSOffice.pdb
